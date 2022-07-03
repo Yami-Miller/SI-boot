@@ -259,17 +259,17 @@
                 <Size>0x0</Size>
               </XRAM>
               <OCR_RVCT1>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT2>
               <OCR_RVCT3>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT3>
@@ -279,7 +279,7 @@
                 <Size>0x200000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT5>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Drivers\Inc;.\SharedModules\Inc;.\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -381,9 +381,6 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
-        </Group>
-        <Group>
           <GroupName>:STM32CubeMX:Common Sources</GroupName>
           <Files>
             <File>
@@ -400,6 +397,56 @@
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\RTE\Device\STM32F429VITx\STCubeGenerated\Src\stm32f4xx_it.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SiBootDrivers</GroupName>
+          <Files>
+            <File>
+              <FileName>DrvUART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drivers\Src\DrvUART.c</FilePath>
+            </File>
+            <File>
+              <FileName>DrvInternalFlash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SharedModules\Src\DrvInternalFlash.c</FilePath>
+            </File>
+            <File>
+              <FileName>DrvNand.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SharedModules\Src\DrvNand.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SiBootSource</GroupName>
+          <Files>
+            <File>
+              <FileName>Communication.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\Communication.c</FilePath>
+            </File>
+            <File>
+              <FileName>Counters.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\Counters.c</FilePath>
+            </File>
+            <File>
+              <FileName>boot_loader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SharedModules\Src\boot_loader.c</FilePath>
+            </File>
+            <File>
+              <FileName>CommonFunctions.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SharedModules\Src\CommonFunctions.c</FilePath>
+            </File>
+            <File>
+              <FileName>FWUImagesInfoHandler.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SharedModules\Src\FWUImagesInfoHandler.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -544,6 +591,12 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
+      <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Flash" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL">
+        <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="GPIO" Cvendor="Keil" Cversion="1.7.13" condition="STM32F4 HAL">
         <package name="STM32F4xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
         <targetInfos>
@@ -666,5 +719,14 @@
       </file>
     </files>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>Temp_project</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>

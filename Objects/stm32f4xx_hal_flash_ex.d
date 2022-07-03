@@ -1,6 +1,6 @@
-./objects/main.o: RTE\Device\STM32F429VITx\STCubeGenerated\Src\main.c \
+./objects/stm32f4xx_hal_flash_ex.o: \
+  C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c \
   RTE\_Target_1\Pre_Include_Global.h \
-  RTE\Device\STM32F429VITx\STCubeGenerated\Inc\main.h \
   C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   RTE\Device\STM32F429VITx\stm32f4xx_hal_conf.h \
   RTE\_Target_1\RTE_Components.h \
@@ -32,10 +32,4 @@
   C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  Inc\Communication.h Inc\Globaldef.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h Drivers\Inc\DrvUART.h \
-  SharedModules\Inc\boot_loader.h SharedModules\Inc\FWU_GlobalDef.h \
-  Inc\Counters.h SharedModules\Inc\DrvNand.h
+  C:\Users\Yami.Miller\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h

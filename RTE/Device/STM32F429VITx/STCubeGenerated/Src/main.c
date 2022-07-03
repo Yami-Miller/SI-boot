@@ -18,7 +18,12 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "Communication.h"
+#include "DrvUART.h"
+#include "boot_loader.h"
+#include "Counters.h"
+#include "DrvNand.h"
+#include "FWU_GlobalDef.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -31,11 +36,30 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define ITM_Port8(n)    (*((volatile unsigned char *)(0xE0000000+4*n)))
+#define ITM_Port16(n)   (*((volatile unsigned short*)(0xE0000000+4*n)))
+#define ITM_Port32(n)   (*((volatile unsigned long *)(0xE0000000+4*n)))
+
+#define DEMCR           (*((volatile unsigned long *)(0xE000EDFC)))
+#define TRCENA          0x01000000
+
+#define APP_IMAGE_START_SECTOR FLASH_SECTOR_2
+#define APP_IMAGE_SIZE_IN_SECTORS 8
+
+#define DAT_FW_IMAGE_ADDR                0xFFA0000
+#define DAT_FW_IMAGE_SIZE               (NVM_BLOCK_SIZE * 2)
+#define DAT_NUM_OF_FW_IMAGES            (2)
+
+//struct __FILE { int handle; /* Add whatever is needed */ };
+//FILE __stdout;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+#define SI_LED_PINOUT         GPIOB, GPIO_PIN_12
+#define SI_LED_ON()           HAL_GPIO_WritePin( SI_LED_PINOUT, GPIO_PIN_RESET )
+#define SI_LED_OFF()          HAL_GPIO_WritePin( SI_LED_PINOUT, GPIO_PIN_SET )
+#define SI_LED_TOGGLE()       HAL_GPIO_TogglePin( SI_LED_PINOUT)
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -46,6 +70,14 @@ UART_HandleTypeDef huart3;
 NAND_HandleTypeDef hnand1;
 
 /* USER CODE BEGIN PV */
+BootParams_t g_siBootInfo = {
+    APP_ADDRESS,
+    APP_IMAGE_START_SECTOR,
+    DAT_FW_IMAGE_ADDR,
+    DAT_FW_IMAGE_SIZE,
+    DAT_ReadBuffer,
+    APP_IMAGE_SIZE_IN_SECTORS
+};
 
 /* USER CODE END PV */
 
@@ -96,6 +128,10 @@ int main(void)
   MX_TIM14_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+	SI_LED_ON();
+    
+  PRINTF("SI-boot ON combo\n");
+  UART_StartCommunication();
 
   /* USER CODE END 2 */
 
@@ -103,8 +139,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		COM_CommunicationManagement();
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -170,6 +206,7 @@ static void MX_TIM14_Init(void)
   /* USER CODE BEGIN TIM14_Init 1 */
 
   /* USER CODE END TIM14_Init 1 */
+	
   htim14.Instance = TIM14;
   htim14.Init.Prescaler = 50;
   htim14.Init.CounterMode = TIM_COUNTERMODE_UP;
@@ -293,7 +330,24 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+// function for debug printf
+int fputc(int ch, FILE *f) 
+{
+    if (DEMCR & TRCENA) 
+    {
+        while (ITM_Port32(0) == 0)
+        {
+        }
+        ITM_Port8(0) = (unsigned char)ch;
+    }
+    (void)f;
+    return(ch);
+}
 
+void HAL_SYSTICK_Callback(void)
+{  
+    CNT_MsInterruptHandler();
+}
 /* USER CODE END 4 */
 
 /**

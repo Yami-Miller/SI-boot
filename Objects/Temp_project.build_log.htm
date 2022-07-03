@@ -22,34 +22,157 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 C:\SW\git\Temp\Temp_project.uvprojx
-Project File Date:  06/30/2022
+Project File Date:  07/03/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.6.1/NAND/NAND_MemBus.c(36): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(56): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include/Driver_Common.h(46): warning: identifier '_ARM_DRIVER_VERSION' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _ARM_DRIVER_VERSION {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include/Driver_Common.h(63): warning: identifier '_ARM_POWER_STATE' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef enum _ARM_POWER_STATE {
+Src/Counters.c(15): warning: In file included from...
+./Inc\Counters.h(14): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+Src/Counters.c(15): warning: In file included from...
+./Inc\Counters.h(14): warning: In file included from...
+./Inc/Globaldef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
              ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.6.1/NAND/NAND_MemBus.c(36): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(185): warning: identifier '_ARM_NAND_ECC_INFO' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _ARM_NAND_ECC_INFO {
+./Inc/Globaldef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc/Globaldef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc/Globaldef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc/Globaldef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc/Globaldef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc/Globaldef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc/Globaldef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc/Globaldef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc/Globaldef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc/Globaldef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc/Globaldef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc/Globaldef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc/Globaldef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc/Globaldef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc/Globaldef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc/Globaldef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc/Globaldef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc/Globaldef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(206): warning: identifier '_ARM_NAND_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _ARM_NAND_STATUS {
+./Inc/Globaldef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc/Globaldef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc/Globaldef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc/Globaldef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc/Globaldef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc/Globaldef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc/Globaldef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc/Globaldef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+Src/Counters.c(15): warning: In file included from...
+./Inc\Counters.h(14): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Globaldef.h"
+         ^
+./Inc/Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Src/Counters.c(15): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Counters.h"
+         ^
+./Inc/Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Src/Counters.c(53): warning: no previous extern declaration for non-static variable 'SecondCount' [-Wmissing-variable-declarations]
+u16 SecondCount = 0;
+    ^
+Src/Counters.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u16 SecondCount = 0;
+^
+Src/Counters.c(68): warning: no previous extern declaration for non-static variable 'CNT_SecondTimersFree' [-Wmissing-variable-declarations]
+u8 CNT_SecondTimersFree[ SECONDS_CNT_NUMBER ];
+   ^
+Src/Counters.c(68): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 CNT_SecondTimersFree[ SECONDS_CNT_NUMBER ];
+^
+Src/Counters.c(69): warning: no previous extern declaration for non-static variable 'CNT_MsTimersFree' [-Wmissing-variable-declarations]
+u8 CNT_MsTimersFree[ MS_CNT_NUMBER ];
+   ^
+Src/Counters.c(69): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 CNT_MsTimersFree[ MS_CNT_NUMBER ];
+^
+36 warnings generated.
+compiling Counters.c...
+SharedModules/Src/DrvInternalFlash.c(10): warning: In file included from...
+./SharedModules/Inc\DrvInternalFlash.h(16): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(369): warning: identifier '_ARM_NAND_CAPABILITIES' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _ARM_NAND_CAPABILITIES {
+SharedModules/Src/DrvInternalFlash.c(10): warning: In file included from...
+./SharedModules/Inc\DrvInternalFlash.h(16): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(398): warning: identifier '_ARM_DRIVER_NAND' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _ARM_DRIVER_NAND {
-               ^
-6 warnings generated.
-compiling NAND_MemBus.c...
+2 warnings generated.
+compiling DrvInternalFlash.c...
 RTE/Device/STM32F429VITx/STCubeGenerated/Src/stm32f4xx_it.c(21): warning: In file included from...
 ./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
@@ -95,6 +218,1232 @@ C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/S
                               ^
 9 warnings generated.
 compiling stm32f4xx_it.c...
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(13): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(13): warning: In file included from...
+./Inc\Globaldef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
+             ^
+./Inc\Globaldef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc\Globaldef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc\Globaldef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc\Globaldef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc\Globaldef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc\Globaldef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc\Globaldef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc\Globaldef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc\Globaldef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc\Globaldef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc\Globaldef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc\Globaldef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc\Globaldef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc\Globaldef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc\Globaldef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc\Globaldef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc\Globaldef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc\Globaldef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
+               ^
+./Inc\Globaldef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc\Globaldef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc\Globaldef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc\Globaldef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc\Globaldef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc\Globaldef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc\Globaldef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc\Globaldef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(13): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Globaldef.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "stm32f4xx_hal.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Drivers/Src/DrvUART.c(15): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "DrvUART.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Drivers/Src/DrvUART.c(16): warning: In file included from...
+./Inc\Communication.h(16): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+./Inc\Communication.h(21): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if (DEBUG)
+     ^
+./Inc\Communication.h(48): warning: identifier '__ProgramExecutionMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __ProgramExecutionMode{
+             ^
+Drivers/Src/DrvUART.c(17): warning: In file included from...
+./Inc\Counters.h(14): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+Drivers/Src/DrvUART.c(59): warning: missing field 'buf' initializer [-Wmissing-field-initializers]
+struct buf_st_r rbuf = { 0, 0, };
+                               ^
+Drivers/Src/DrvUART.c(59): warning: no previous extern declaration for non-static variable 'rbuf' [-Wmissing-variable-declarations]
+struct buf_st_r rbuf = { 0, 0, };
+                ^
+Drivers/Src/DrvUART.c(59): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+struct buf_st_r rbuf = { 0, 0, };
+^
+Drivers/Src/DrvUART.c(62): warning: missing field 'buf' initializer [-Wmissing-field-initializers]
+struct buf_st_t tbuf = { 0, 0, };
+                               ^
+Drivers/Src/DrvUART.c(62): warning: no previous extern declaration for non-static variable 'tbuf' [-Wmissing-variable-declarations]
+struct buf_st_t tbuf = { 0, 0, };
+                ^
+Drivers/Src/DrvUART.c(62): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+struct buf_st_t tbuf = { 0, 0, };
+^
+Drivers/Src/DrvUART.c(65): warning: no previous extern declaration for non-static variable 'tx_restart' [-Wmissing-variable-declarations]
+unsigned int tx_restart = 1;               // NZ if TX restart is required
+             ^
+Drivers/Src/DrvUART.c(65): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned int tx_restart = 1;               // NZ if TX restart is required
+^
+Drivers/Src/DrvUART.c(69): warning: no previous extern declaration for non-static variable 'uart_ContinueRecMsg' [-Wmissing-variable-declarations]
+bool uart_ContinueRecMsg = false;
+     ^
+Drivers/Src/DrvUART.c(69): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+bool uart_ContinueRecMsg = false;
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+Drivers/Src/DrvUART.c(70): warning: no previous extern declaration for non-static variable 'uart_SizeMsgToRec' [-Wmissing-variable-declarations]
+uint8_t uart_SizeMsgToRec = 0;
+        ^
+Drivers/Src/DrvUART.c(70): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t uart_SizeMsgToRec = 0;
+^
+Drivers/Src/DrvUART.c(72): warning: no previous extern declaration for non-static variable 'new_receive_is_busy' [-Wmissing-variable-declarations]
+volatile HAL_StatusTypeDef new_receive_is_busy = HAL_OK;
+                           ^
+Drivers/Src/DrvUART.c(72): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile HAL_StatusTypeDef new_receive_is_busy = HAL_OK;
+         ^
+Drivers/Src/DrvUART.c(73): warning: no previous extern declaration for non-static variable 'uart_transmit_done' [-Wmissing-variable-declarations]
+volatile bool   uart_transmit_done = true;
+                ^
+Drivers/Src/DrvUART.c(73): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile bool   uart_transmit_done = true;
+         ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+Drivers/Src/DrvUART.c(108): warning: result of comparison of 9-bit signed value != 256 is always true [-Wtautological-value-range-compare]
+    if ( ((Rx->in - Rx->out) != RBUF_SIZE))
+          ~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(183): warning: padding struct 'struct __UART_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t                 ErrorCode;        /*!< UART Error code                    */
+                                ^
+Drivers/Src/DrvUART.c(15): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+Drivers/Src/DrvUART.c(232): warning: unused parameter 'huart' [-Wunused-parameter]
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
+                                                 ^
+Drivers/Src/DrvUART.c(67): warning: no previous extern declaration for non-static variable 'uart_TempBuffer' [-Wmissing-variable-declarations]
+uint8_t uart_TempBuffer[UART_TEMP_BUFFER_SIZE];
+        ^
+Drivers/Src/DrvUART.c(67): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t uart_TempBuffer[UART_TEMP_BUFFER_SIZE];
+^
+54 warnings generated.
+compiling DrvUART.c...
+SharedModules/Src/DrvNand.c(1): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+SharedModules/Src/DrvNand.c(1): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: In file included from...
+./Inc\Globaldef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
+             ^
+./Inc\Globaldef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc\Globaldef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc\Globaldef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc\Globaldef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc\Globaldef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc\Globaldef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc\Globaldef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc\Globaldef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc\Globaldef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc\Globaldef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc\Globaldef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc\Globaldef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc\Globaldef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc\Globaldef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc\Globaldef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc\Globaldef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc\Globaldef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc\Globaldef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
+               ^
+./Inc\Globaldef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc\Globaldef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc\Globaldef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc\Globaldef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc\Globaldef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc\Globaldef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc\Globaldef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc\Globaldef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+SharedModules/Src/DrvNand.c(1): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Globaldef.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/DrvNand.c(1): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+SharedModules/Src/DrvNand.c(1): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+SharedModules/Src/DrvNand.c(1): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(25): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "stm32f4xx_hal.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/DrvNand.c(1): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "DrvNand.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/DrvNand.c(38): warning: implicit conversion changes signedness: 'unsigned int' to 'long' [-Wsign-conversion]
+        if(fseek(f, address-fileAddr, SEEK_SET) != 0){
+           ~~~~~    ~~~~~~~^~~~~~~~~
+SharedModules/Src/DrvNand.c(29): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        FILE* f = fopen((char*)fileName, "rb");
+              ^
+SharedModules/Src/DrvNand.c(21): warning: unused variable 'p' [-Wunused-variable]
+        char* p;
+              ^
+SharedModules/Src/DrvNand.c(107): warning: implicit conversion changes signedness: 'unsigned int' to 'long' [-Wsign-conversion]
+        if(fseek(f, address-fileAddr, SEEK_SET) != 0){
+           ~~~~~    ~~~~~~~^~~~~~~~~
+SharedModules/Src/DrvNand.c(83): warning: unused variable 'offset_f' [-Wunused-variable]
+        FILE *f, *offset_f; 
+                  ^
+SharedModules/Src/DrvNand.c(113): warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+                if(writeResult == EOF || writeResult != 1){
+                   ~~~~~~~~~~~ ^  ~~~
+42 warnings generated.
+compiling DrvNand.c...
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
+./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
+./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./Inc\Communication.h(16): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./Inc\Communication.h(16): warning: In file included from...
+./Inc/Globaldef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
+             ^
+./Inc/Globaldef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc/Globaldef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc/Globaldef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc/Globaldef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc/Globaldef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc/Globaldef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc/Globaldef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc/Globaldef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc/Globaldef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc/Globaldef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc/Globaldef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc/Globaldef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc/Globaldef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc/Globaldef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc/Globaldef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc/Globaldef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc/Globaldef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc/Globaldef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
+               ^
+./Inc/Globaldef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc/Globaldef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc/Globaldef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc/Globaldef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc/Globaldef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc/Globaldef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc/Globaldef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc/Globaldef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./Inc\Communication.h(16): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Globaldef.h"
+         ^
+./Inc/Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(21): warning: In file included from...
+./Inc\Communication.h(21): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if (DEBUG)
+     ^
+./Inc\Communication.h(48): warning: identifier '__ProgramExecutionMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __ProgramExecutionMode{
+             ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(21): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Communication.h"
+         ^
+./Inc/Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(22): warning: In file included from...
+./Drivers/Inc\DrvUART.h(13): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(22): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "DrvUART.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(23): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(18): warning: In file included from...
+./SharedModules/Inc/FWU_GlobalDef.h(10): warning: identifier '__BootMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __BootMode{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(18): warning: identifier '__FWUImage' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImage{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(25): warning: identifier '__FWUImageDevice' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImageDevice{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(34): warning: identifier '__FirmwareImageInfo' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __FirmwareImageInfo
+               ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(23): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(29): warning: identifier '__BootParams' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __BootParams
+               ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(23): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "boot_loader.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(24): warning: In file included from...
+./Inc\Counters.h(14): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(25): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(25): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "DrvNand.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(73): warning: no previous extern declaration for non-static variable 'g_siBootInfo' [-Wmissing-variable-declarations]
+BootParams_t g_siBootInfo = {
+             ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(73): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+BootParams_t g_siBootInfo = {
+^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(23): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(29): warning: padding size of 'struct __BootParams' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct __BootParams
+               ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
+./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(511): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_tim.h(344): warning: padding struct 'TIM_HandleTypeDef' with 3 bytes to align 'hdma' [-Wpadded]
+  DMA_HandleTypeDef                  *hdma[7];          /*!< DMA Handlers array
+                                      ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_tim.h(338): warning: padding size of 'TIM_HandleTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
+./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(183): warning: padding struct 'struct __UART_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t                 ErrorCode;        /*!< UART Error code                    */
+                                ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
+./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(451): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_nand.h(100): warning: padding size of 'NAND_DeviceConfigTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_nand.h(141): warning: padding struct 'NAND_HandleTypeDef' with 2 bytes to align 'Config' [-Wpadded]
+  NAND_DeviceConfigTypeDef       Config;     /*!< NAND phusical characteristic information structure    */
+                                 ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(358): warning: function 'Error_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(66): warning: no previous extern declaration for non-static variable 'htim14' [-Wmissing-variable-declarations]
+ TIM_HandleTypeDef htim14;
+                   ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(66): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ TIM_HandleTypeDef htim14;
+ ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
+./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(68): warning: no previous extern declaration for non-static variable 'huart3' [-Wmissing-variable-declarations]
+UART_HandleTypeDef huart3;
+                   ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(68): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+UART_HandleTypeDef huart3;
+^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(70): warning: no previous extern declaration for non-static variable 'hnand1' [-Wmissing-variable-declarations]
+NAND_HandleTypeDef hnand1;
+                   ^
+RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(70): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+NAND_HandleTypeDef hnand1;
+^
+60 warnings generated.
+compiling main.c...
+Src/Communication.c(25): warning: In file included from...
+./Inc\Communication.h(16): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+Src/Communication.c(25): warning: In file included from...
+./Inc\Communication.h(16): warning: In file included from...
+./Inc/Globaldef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc/Globaldef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
+             ^
+./Inc/Globaldef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc/Globaldef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc/Globaldef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc/Globaldef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc/Globaldef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc/Globaldef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc/Globaldef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc/Globaldef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc/Globaldef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc/Globaldef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc/Globaldef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc/Globaldef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc/Globaldef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc/Globaldef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc/Globaldef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc/Globaldef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc/Globaldef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc/Globaldef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
+               ^
+./Inc/Globaldef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc/Globaldef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc/Globaldef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc/Globaldef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc/Globaldef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc/Globaldef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc/Globaldef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc/Globaldef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+Src/Communication.c(25): warning: In file included from...
+./Inc\Communication.h(16): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Globaldef.h"
+         ^
+./Inc/Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Src/Communication.c(25): warning: In file included from...
+./Inc\Communication.h(21): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if (DEBUG)
+     ^
+./Inc\Communication.h(48): warning: identifier '__ProgramExecutionMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __ProgramExecutionMode{
+             ^
+Src/Communication.c(25): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Communication.h"
+         ^
+./Inc/Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Src/Communication.c(26): warning: In file included from...
+./Drivers/Inc\DrvUART.h(13): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+Src/Communication.c(26): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+Src/Communication.c(26): warning: In file included from...
+./Drivers/Inc\DrvUART.h(14): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+Src/Communication.c(26): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "DrvUART.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Src/Communication.c(28): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(18): warning: In file included from...
+./SharedModules/Inc/FWU_GlobalDef.h(10): warning: identifier '__BootMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __BootMode{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(18): warning: identifier '__FWUImage' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImage{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(25): warning: identifier '__FWUImageDevice' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImageDevice{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(34): warning: identifier '__FirmwareImageInfo' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __FirmwareImageInfo
+               ^
+Src/Communication.c(28): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(29): warning: identifier '__BootParams' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __BootParams
+               ^
+Src/Communication.c(28): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "boot_loader.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+Src/Communication.c(30): warning: In file included from...
+./SharedModules/Inc\ComOpcodes.h(5): warning: identifier '_MessageOpcode' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _MessageOpcode
+             ^
+Src/Communication.c(82): warning: no previous extern declaration for non-static variable 'g_bootModeCommands' [-Wmissing-variable-declarations]
+const FuncPtr_t g_bootModeCommands[ ] =
+                ^
+Src/Communication.c(82): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const FuncPtr_t g_bootModeCommands[ ] =
+      ^
+Src/Communication.c(100): warning: no previous extern declaration for non-static variable 'com_ParsingStep' [-Wmissing-variable-declarations]
+u8 com_ParsingStep = WaitForStart1;
+   ^
+Src/Communication.c(100): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 com_ParsingStep = WaitForStart1;
+^
+Src/Communication.c(106): warning: no previous extern declaration for non-static variable 'com_ReceivTimeout' [-Wmissing-variable-declarations]
+u16 com_ReceivTimeout = 0;
+    ^
+Src/Communication.c(106): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u16 com_ReceivTimeout = 0;
+^
+Src/Communication.c(109): warning: no previous extern declaration for non-static variable 'com_ReceivedDataCounter' [-Wmissing-variable-declarations]
+u16 com_ReceivedDataCounter = 0;
+    ^
+Src/Communication.c(109): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u16 com_ReceivedDataCounter = 0;
+^
+Src/Communication.c(117): warning: no previous extern declaration for non-static variable 'com_StatusIndex' [-Wmissing-variable-declarations]
+u32 com_StatusIndex = 0;
+    ^
+Src/Communication.c(117): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u32 com_StatusIndex = 0;
+^
+Src/Communication.c(119): warning: no previous extern declaration for non-static variable 'TransmitBuffer' [-Wmissing-variable-declarations]
+u8 TransmitBuffer[255] = {0};
+   ^
+Src/Communication.c(119): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 TransmitBuffer[255] = {0};
+^
+Src/Communication.c(121): warning: no previous extern declaration for non-static variable 'temperature_out' [-Wmissing-variable-declarations]
+uint16_t temperature_out = 0;
+         ^
+Src/Communication.c(121): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t temperature_out = 0;
+^
+Src/Communication.c(138): warning: no previous extern declaration for non-static variable 'COM_flgCommandWasRecevied' [-Wmissing-variable-declarations]
+bool COM_flgCommandWasRecevied = false;
+     ^
+Src/Communication.c(138): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+bool COM_flgCommandWasRecevied = false;
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+Src/Communication.c(308): warning: no previous prototype for function 'COM_CalcCheckSum' [-Wmissing-prototypes]
+u8 COM_CalcCheckSum( u8 const *data, u16 size )
+   ^
+Src/Communication.c(308): note: declare 'static' if the function is not intended to be used outside of this translation unit
+u8 COM_CalcCheckSum( u8 const *data, u16 size )
+^
+static 
+Src/Communication.c(349): warning: no previous prototype for function 'com_ClearCommand' [-Wmissing-prototypes]
+void com_ClearCommand( void )
+     ^
+Src/Communication.c(349): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void com_ClearCommand( void )
+^
+static 
+Src/Communication.c(417): warning: implicit declaration of function 'osDelay' is invalid in C99 [-Wimplicit-function-declaration]
+                osDelay(100);
+                ^
+Src/Communication.c(28): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(29): warning: padding size of 'struct __BootParams' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct __BootParams
+               ^
+Src/Communication.c(55): warning: no previous extern declaration for non-static variable 'ParseSteps' [-Wmissing-variable-declarations]
+}ParseSteps;
+ ^
+Src/Communication.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+enum{
+^
+Src/Communication.c(103): warning: no previous extern declaration for non-static variable 'com_ReceivedCommand' [-Wmissing-variable-declarations]
+u8 com_ReceivedCommand[COM_COMMAND_SIZE ];
+   ^
+Src/Communication.c(103): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 com_ReceivedCommand[COM_COMMAND_SIZE ];
+^
+Src/Communication.c(112): warning: no previous extern declaration for non-static variable 'com_TmpLenMsg' [-Wmissing-variable-declarations]
+u8 com_TmpLenMsg;
+   ^
+Src/Communication.c(112): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 com_TmpLenMsg;
+^
+Src/Communication.c(115): warning: no previous extern declaration for non-static variable 'com_ReceivedCheckSum' [-Wmissing-variable-declarations]
+u8 com_ReceivedCheckSum;
+   ^
+Src/Communication.c(115): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+u8 com_ReceivedCheckSum;
+^
+62 warnings generated.
+compiling Communication.c...
+SharedModules/Src/CommonFunctions.c(4): warning: In file included from...
+./SharedModules/Inc\CommonFunctions.h(19): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if (DEBUG)
+     ^
+1 warning generated.
+compiling CommonFunctions.c...
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(16): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(16): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(18): warning: In file included from...
+./SharedModules/Inc/FWU_GlobalDef.h(10): warning: identifier '__BootMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __BootMode{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(18): warning: identifier '__FWUImage' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImage{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(25): warning: identifier '__FWUImageDevice' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImageDevice{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(34): warning: identifier '__FirmwareImageInfo' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __FirmwareImageInfo
+               ^
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(29): warning: identifier '__BootParams' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __BootParams
+               ^
+SharedModules/Src/boot_loader.c(15): warning: In file included from...
+./Inc\GlobalDef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\GlobalDef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\GlobalDef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\GlobalDef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
+             ^
+./Inc\GlobalDef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc\GlobalDef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc\GlobalDef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc\GlobalDef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc\GlobalDef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc\GlobalDef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc\GlobalDef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc\GlobalDef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc\GlobalDef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc\GlobalDef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc\GlobalDef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc\GlobalDef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc\GlobalDef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc\GlobalDef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc\GlobalDef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc\GlobalDef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc\GlobalDef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc\GlobalDef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
+               ^
+./Inc\GlobalDef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc\GlobalDef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc\GlobalDef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc\GlobalDef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc\GlobalDef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc\GlobalDef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc\GlobalDef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc\GlobalDef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+SharedModules/Src/boot_loader.c(15): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "GlobalDef.h"
+         ^
+./Inc\GlobalDef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/boot_loader.c(16): warning: In file included from...
+./SharedModules/Inc\CommonFunctions.h(19): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if (DEBUG)
+     ^
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(16): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(183): warning: padding struct 'struct __UART_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t                 ErrorCode;        /*!< UART Error code                    */
+                                ^
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(29): warning: padding size of 'struct __BootParams' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct __BootParams
+               ^
+SharedModules/Src/boot_loader.c(13): warning: In file included from...
+./SharedModules/Inc\boot_loader.h(16): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+SharedModules/Src/boot_loader.c(89): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        bytesToRead = CF_Min(BUFFER_SIZE, endImageAddress - imageAddress);
+                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+43 warnings generated.
+compiling boot_loader.c...
+SharedModules/Src/FWUImagesInfoHandler.c(10): warning: In file included from...
+./SharedModules/Inc\FWUImagesInfoHandler.h(15): warning: In file included from...
+./SharedModules/Inc/FWU_GlobalDef.h(10): warning: identifier '__BootMode' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __BootMode{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(18): warning: identifier '__FWUImage' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImage{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(25): warning: identifier '__FWUImageDevice' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef enum __FWUImageDevice{
+             ^
+./SharedModules/Inc/FWU_GlobalDef.h(34): warning: identifier '__FirmwareImageInfo' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __FirmwareImageInfo
+               ^
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: non-portable path to file '"GlobalDef.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "Globaldef.h"
+         ^~~~~~~~~~~~~
+         "GlobalDef.h"
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: In file included from...
+./Inc\Globaldef.h(66): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(95): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(101): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if DEBUG
+    ^
+./Inc\Globaldef.h(114): warning: identifier '_pulseStatus' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _pulseStatus
+             ^
+./Inc\Globaldef.h(133): warning: identifier '_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _STATUS
+             ^
+./Inc\Globaldef.h(153): warning: identifier '_AckMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _AckMsg{
+       ^
+./Inc\Globaldef.h(167): warning: identifier '_WhiteBoxMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _WhiteBoxMsg{
+       ^
+./Inc\Globaldef.h(179): warning: identifier '_ResetSiMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _ResetSiMsg{
+       ^
+./Inc\Globaldef.h(191): warning: identifier '_StartMonitorMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StartMonitorMsg{
+       ^
+./Inc\Globaldef.h(207): warning: identifier '_DateAndTimeMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DateAndTimeMsg{
+       ^
+./Inc\Globaldef.h(217): warning: identifier '_SetPatientMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetPatientMsg{
+       ^
+./Inc\Globaldef.h(230): warning: identifier '_SensorDataResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponseMsg{
+       ^
+./Inc\Globaldef.h(243): warning: identifier '_SetSensorDataMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SetSensorDataMsg{
+       ^
+./Inc\Globaldef.h(255): warning: identifier '_StatusResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _StatusResponseMsg{
+       ^
+./Inc\Globaldef.h(274): warning: identifier '_VerResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _VerResponseMsg{
+       ^
+./Inc\Globaldef.h(298): warning: identifier '_PatientDataLogRespopnse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientDataLogRespopnse{
+       ^
+./Inc\Globaldef.h(314): warning: identifier '_PatientPulseDataReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseDataReq{
+       ^
+./Inc\Globaldef.h(326): warning: identifier '_PatientPulseData' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PatientPulseData{
+       ^
+./Inc\Globaldef.h(338): warning: identifier '_startUse' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+struct _startUse{
+       ^
+./Inc\Globaldef.h(353): warning: identifier '_SensorDataResponse' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SensorDataResponse{
+       ^
+./Inc\Globaldef.h(371): warning: identifier '_startHnadshake' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   struct _startHnadshake{
+          ^
+./Inc\Globaldef.h(389): warning: identifier '_LastPulseAndFlow' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _LastPulseAndFlow
+               ^
+./Inc\Globaldef.h(402): warning: identifier '_McpConnectionStatus' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _McpConnectionStatus{
+       ^
+./Inc\Globaldef.h(413): warning: identifier '_PulseInfoReq' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfoReq{
+       ^
+./Inc\Globaldef.h(424): warning: identifier '_HeaterAndStickResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _HeaterAndStickResponseMsg{
+       ^
+./Inc\Globaldef.h(436): warning: identifier '_LastFlowParamsResponseMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _LastFlowParamsResponseMsg{
+       ^
+./Inc\Globaldef.h(451): warning: identifier '_SystemLogResonseMsg_t' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _SystemLogResonseMsg_t{
+       ^
+./Inc\Globaldef.h(462): warning: identifier '_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _PulseInfo{
+       ^
+./Inc\Globaldef.h(484): warning: identifier '_DAT_PulseInfo' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _DAT_PulseInfo{
+       ^
+./Inc\Globaldef.h(503): warning: identifier '_KeepAliveMsg' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+struct _KeepAliveMsg{
+       ^
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(24): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "Globaldef.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: In file included from...
+./SharedModules/Inc\DrvNand.h(25): warning: non-default #pragma pack value changes the alignment of struct or union members in the included file [-Wpragma-pack-suspicious-include]
+#include "stm32f4xx_hal.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/FWUImagesInfoHandler.c(12): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "DrvNand.h"
+         ^
+./Inc\Globaldef.h(515): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(4)
+        ^
+SharedModules/Src/FWUImagesInfoHandler.c(13): warning: In file included from...
+./SharedModules/Inc\CommonFunctions.h(19): warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+#if (DEBUG)
+     ^
+SharedModules/Src/FWUImagesInfoHandler.c(24): warning: identifier '__ImagesInfo' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __ImagesInfo
+               ^
+SharedModules/Src/FWUImagesInfoHandler.c(40): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+static void imgh_eraseImage();
+                           ^
+                            void
+SharedModules/Src/FWUImagesInfoHandler.c(24): warning: padding size of 'struct __ImagesInfo' with 1 byte to alignment boundary [-Wpadded]
+typedef struct __ImagesInfo
+               ^
+SharedModules/Src/FWUImagesInfoHandler.c(93): warning: enumeration values 'FWU_OLD' and 'FWU_NO_IMAGE' not explicitly handled in switch [-Wswitch-enum]
+        switch(imagesInfo[i].m_imageType)
+               ^~~~~~~~~~~~~~~~~~~~~~~~~
+SharedModules/Src/FWUImagesInfoHandler.c(183): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        bytesToRead = CF_Min(BUFFER_SIZE, endAppAddress - appAddress);
+                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+46 warnings generated.
+compiling FWUImagesInfoHandler.c...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/ARM/clib_arm.c(26): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(59): warning: In file included from...
 ./RTE/RTOS\FreeRTOSConfig.h(46): warning: In file included from...
@@ -140,6 +1489,56 @@ __USED void _mutex_free      (mutex *m);
             ^
 10 warnings generated.
 compiling clib_arm.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(46): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(59): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(46): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1181): warning: padding size of 'struct xSTATIC_TCB' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TCB
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(636): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+      default:         state = osThreadError;      break;
+      ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(710): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    taskYIELD();
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(30): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include/task.h(160): warning: padding struct 'struct xTASK_STATUS' with 3 bytes to align 'uxCurrentPriority' [-Wpadded]
+    UBaseType_t uxCurrentPriority;                /* The priority at which the task was running (may be inherited) when the structure was populated. */
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include/task.h(154): warning: padding size of 'struct xTASK_STATUS' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct xTASK_STATUS
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1316): warning: padding size of 'struct xSTATIC_TIMER' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_TIMER
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1288): warning: padding size of 'struct xSTATIC_EVENT_GROUP' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_EVENT_GROUP
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1268): warning: padding struct 'struct xSTATIC_QUEUE' with 1 byte to align 'uxDummy8' [-Wpadded]
+        UBaseType_t uxDummy8;
+                    ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1245): warning: padding size of 'struct xSTATIC_QUEUE' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct xSTATIC_QUEUE
+               ^
+11 warnings generated.
+compiling cmsis_os2.c...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/os_systick.c(28): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
@@ -156,77 +1555,29 @@ typedef struct __UART_HandleTypeDef
                ^
 2 warnings generated.
 compiling os_systick.c...
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
-./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.6.1/NAND/NAND_MemBus.c(36): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(56): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include/Driver_Common.h(46): warning: identifier '_ARM_DRIVER_VERSION' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _ARM_DRIVER_VERSION {
                ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
-./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include/Driver_Common.h(63): warning: identifier '_ARM_POWER_STATE' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef enum _ARM_POWER_STATE {
+             ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-Driver/2.6.1/NAND/NAND_MemBus.c(36): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(185): warning: identifier '_ARM_NAND_ECC_INFO' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _ARM_NAND_ECC_INFO {
                ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
-./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(511): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_tim.h(344): warning: padding struct 'TIM_HandleTypeDef' with 3 bytes to align 'hdma' [-Wpadded]
-  DMA_HandleTypeDef                  *hdma[7];          /*!< DMA Handlers array
-                                      ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_tim.h(338): warning: padding size of 'TIM_HandleTypeDef' with 1 byte to alignment boundary [-Wpadded]
-typedef struct
-        ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
-./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(183): warning: padding struct 'struct __UART_HandleTypeDef' with 1 byte to align 'ErrorCode' [-Wpadded]
-  __IO uint32_t                 ErrorCode;        /*!< UART Error code                    */
-                                ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
-./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(451): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_nand.h(100): warning: padding size of 'NAND_DeviceConfigTypeDef' with 3 bytes to alignment boundary [-Wpadded]
-typedef struct
-        ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_nand.h(141): warning: padding struct 'NAND_HandleTypeDef' with 2 bytes to align 'Config' [-Wpadded]
-  NAND_DeviceConfigTypeDef       Config;     /*!< NAND phusical characteristic information structure    */
-                                 ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(304): warning: function 'Error_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-{
-^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(42): warning: no previous extern declaration for non-static variable 'htim14' [-Wmissing-variable-declarations]
- TIM_HandleTypeDef htim14;
-                   ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(42): note: declare 'static' if the variable is not intended to be used outside of this translation unit
- TIM_HandleTypeDef htim14;
- ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(20): warning: In file included from...
-./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
-  void                       *Parent;                                                          /*!< Parent object state                    */ 
-                              ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(44): warning: no previous extern declaration for non-static variable 'huart3' [-Wmissing-variable-declarations]
-UART_HandleTypeDef huart3;
-                   ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(44): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-UART_HandleTypeDef huart3;
-^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(46): warning: no previous extern declaration for non-static variable 'hnand1' [-Wmissing-variable-declarations]
-NAND_HandleTypeDef hnand1;
-                   ^
-RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c(46): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-NAND_HandleTypeDef hnand1;
-^
-12 warnings generated.
-compiling main.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(206): warning: identifier '_ARM_NAND_STATUS' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _ARM_NAND_STATUS {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(369): warning: identifier '_ARM_NAND_CAPABILITIES' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _ARM_NAND_CAPABILITIES {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Driver/Include\Driver_NAND.h(398): warning: identifier '_ARM_DRIVER_NAND' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _ARM_DRIVER_NAND {
+               ^
+6 warnings generated.
+compiling NAND_MemBus.c...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.6.3/Source/EventRecorder.c(14): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
@@ -346,225 +1697,6 @@ extern long     __sys_flen    (int handle);
                 ^
 31 warnings generated.
 compiling retarget_io.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(59): warning: In file included from...
-./RTE/RTOS\FreeRTOSConfig.h(46): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(59): warning: In file included from...
-./RTE/RTOS\FreeRTOSConfig.h(46): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1181): warning: padding size of 'struct xSTATIC_TCB' with 2 bytes to alignment boundary [-Wpadded]
-typedef struct xSTATIC_TCB
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(636): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
-      default:         state = osThreadError;      break;
-      ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(710): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
-    taskYIELD();
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(30): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include/task.h(160): warning: padding struct 'struct xTASK_STATUS' with 3 bytes to align 'uxCurrentPriority' [-Wpadded]
-    UBaseType_t uxCurrentPriority;                /* The priority at which the task was running (may be inherited) when the structure was populated. */
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include/task.h(154): warning: padding size of 'struct xTASK_STATUS' with 2 bytes to alignment boundary [-Wpadded]
-typedef struct xTASK_STATUS
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/CMSIS/RTOS2/FreeRTOS/Source/cmsis_os2.c(29): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1316): warning: padding size of 'struct xSTATIC_TIMER' with 3 bytes to alignment boundary [-Wpadded]
-typedef struct xSTATIC_TIMER
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1288): warning: padding size of 'struct xSTATIC_EVENT_GROUP' with 3 bytes to alignment boundary [-Wpadded]
-typedef struct xSTATIC_EVENT_GROUP
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1268): warning: padding struct 'struct xSTATIC_QUEUE' with 1 byte to align 'uxDummy8' [-Wpadded]
-        UBaseType_t uxDummy8;
-                    ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/include\FreeRTOS.h(1245): warning: padding size of 'struct xSTATIC_QUEUE' with 3 bytes to alignment boundary [-Wpadded]
-typedef struct xSTATIC_QUEUE
-               ^
-11 warnings generated.
-compiling cmsis_os2.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c(36): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c(36): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-2 warnings generated.
-compiling stm32f4xx_hal.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(217): warning: function 'HAL_NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
-{
-^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(399): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_cortex.h(54): warning: padding struct 'MPU_Region_InitTypeDef' with 2 bytes to align 'BaseAddress' [-Wpadded]
-  uint32_t               BaseAddress;           /*!< Specifies the base address of the region to protect.                           */
-                         ^
-4 warnings generated.
-compiling stm32f4xx_hal_cortex.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(108): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(108): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-2 warnings generated.
-compiling stm32f4xx_hal_gpio.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(26): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(26): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(381): warning: unused parameter 'Regulator' [-Wunused-parameter]
-void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
-                                     ^
-3 warnings generated.
-compiling stm32f4xx_hal_pwr.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c(25): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c(25): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-2 warnings generated.
-compiling stm32f4xx_hal_pwr_ex.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(69): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(69): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-2 warnings generated.
-compiling stm32f4xx_hal_rcc.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(25): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(25): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(25): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(383): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_rcc.h(33): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h(341): warning: padding size of 'RCC_PeriphCLKInitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
-typedef struct
-        ^
-3 warnings generated.
-compiling stm32f4xx_hal_rcc_ex.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(98): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(98): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(98): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
-  void                       *Parent;                                                          /*!< Parent object state                    */ 
-                              ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(290): warning: cast from function call of type 'uint32_t' (aka 'unsigned int') to non-matching type 'DMA_Base_Registers *' [-Wbad-function-cast]
-  regs = (DMA_Base_Registers *)DMA_CalcBaseAndBitshift(hdma);
-                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(352): warning: cast from function call of type 'uint32_t' (aka 'unsigned int') to non-matching type 'DMA_Base_Registers *' [-Wbad-function-cast]
-  regs = (DMA_Base_Registers *)DMA_CalcBaseAndBitshift(hdma);
-                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(978): warning: enumeration value 'HAL_DMA_XFER_ALL_CB_ID' not explicitly handled in switch [-Wswitch-enum]
-    switch (CallbackID)
-            ^~~~~~~~~~
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(1072): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
-    default:
-    ^
-7 warnings generated.
-compiling stm32f4xx_hal_dma.c...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(40): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __DMA_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(40): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
-typedef struct __UART_HandleTypeDef
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(40): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
-./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
-  void                       *Parent;                                                          /*!< Parent object state                    */ 
-                              ^
-3 warnings generated.
-compiling stm32f4xx_hal_dma_ex.c...
 C:/SW/git/Temp/RTE/Device/STM32F429VITx/STCubeGenerated/Src/stm32f4xx_hal_msp.c(22): warning: In file included from...
 ./RTE/Device/STM32F429VITx/STCubeGenerated/Inc\main.h(30): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
@@ -621,6 +1753,126 @@ void HAL_NAND_MspDeInit(NAND_HandleTypeDef* hnand){
                                             ^
 10 warnings generated.
 compiling stm32f4xx_hal_msp.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c(36): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c(36): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+2 warnings generated.
+compiling stm32f4xx_hal.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(217): warning: function 'HAL_NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c(83): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(399): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_cortex.h(54): warning: padding struct 'MPU_Region_InitTypeDef' with 2 bytes to align 'BaseAddress' [-Wpadded]
+  uint32_t               BaseAddress;           /*!< Specifies the base address of the region to protect.                           */
+                         ^
+4 warnings generated.
+compiling stm32f4xx_hal_cortex.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(98): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(98): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(98): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(290): warning: cast from function call of type 'uint32_t' (aka 'unsigned int') to non-matching type 'DMA_Base_Registers *' [-Wbad-function-cast]
+  regs = (DMA_Base_Registers *)DMA_CalcBaseAndBitshift(hdma);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(352): warning: cast from function call of type 'uint32_t' (aka 'unsigned int') to non-matching type 'DMA_Base_Registers *' [-Wbad-function-cast]
+  regs = (DMA_Base_Registers *)DMA_CalcBaseAndBitshift(hdma);
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(978): warning: enumeration value 'HAL_DMA_XFER_ALL_CB_ID' not explicitly handled in switch [-Wswitch-enum]
+    switch (CallbackID)
+            ^~~~~~~~~~
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c(1072): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+    default:
+    ^
+7 warnings generated.
+compiling stm32f4xx_hal_dma.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(40): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(40): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c(40): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(149): warning: padding struct 'struct __DMA_HandleTypeDef' with 2 bytes to align 'Parent' [-Wpadded]
+  void                       *Parent;                                                          /*!< Parent object state                    */ 
+                              ^
+3 warnings generated.
+compiling stm32f4xx_hal_dma_ex.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(108): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c(108): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+2 warnings generated.
+compiling stm32f4xx_hal_gpio.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(26): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(26): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c(381): warning: unused parameter 'Regulator' [-Wunused-parameter]
+void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
+                                     ^
+3 warnings generated.
+compiling stm32f4xx_hal_pwr.c...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c(110): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
 ./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
@@ -644,6 +1896,55 @@ C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/S
                                  ^
 4 warnings generated.
 compiling stm32f4xx_hal_nand.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+2 warnings generated.
+compiling stm32f4xx_hal_pwr_ex.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(69): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c(69): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+2 warnings generated.
+compiling stm32f4xx_hal_rcc.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c(25): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(383): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_rcc.h(33): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h(341): warning: padding size of 'RCC_PeriphCLKInitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+3 warnings generated.
+compiling stm32f4xx_hal_rcc_ex.c...
 assembling startup_stm32f429xx.s...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c(59): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
@@ -688,6 +1989,54 @@ C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/S
                               ^
 5 warnings generated.
 compiling stm32f4xx_hal_tim_ex.c...
+RTE/Device/STM32F429VITx/system_stm32f4xx.c(49): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+RTE/Device/STM32F429VITx/system_stm32f4xx.c(49): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+2 warnings generated.
+compiling system_stm32f4xx.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c(78): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __DMA_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c(78): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
+typedef struct __UART_HandleTypeDef
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c(78): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(439): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(62): warning: padding struct 'FLASH_ProcessTypeDef' with 3 bytes to align 'NbSectorsToErase' [-Wpadded]
+  __IO uint32_t               NbSectorsToErase;   /*Internal variable to save the remaining sectors to erase in IT context*/
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(66): warning: padding struct 'FLASH_ProcessTypeDef' with 3 bytes to align 'Sector' [-Wpadded]
+  __IO uint32_t               Sector;             /*Internal variable to define the current sector which is erasing*/
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(74): warning: padding struct 'FLASH_ProcessTypeDef' with 3 bytes to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t               ErrorCode;          /* FLASH error code                    */
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c(106): warning: no previous extern declaration for non-static variable 'pFlash' [-Wmissing-variable-declarations]
+FLASH_ProcessTypeDef pFlash;
+                     ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c(106): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+FLASH_ProcessTypeDef pFlash;
+^
+6 warnings generated.
+compiling stm32f4xx_hal_flash.c...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c(257): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
 ./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
@@ -726,104 +2075,51 @@ C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/S
                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 9 warnings generated.
 compiling stm32f4xx_hal_uart.c...
-RTE/Device/STM32F429VITx/system_stm32f4xx.c(49): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(64): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
 ./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_dma.h(139): warning: identifier '__DMA_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
 typedef struct __DMA_HandleTypeDef
                ^
-RTE/Device/STM32F429VITx/system_stm32f4xx.c(49): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(288): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(64): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
 ./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(515): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(150): warning: identifier '__UART_HandleTypeDef' is reserved because it starts with '__' [-Wreserved-identifier]
 typedef struct __UART_HandleTypeDef
                ^
-2 warnings generated.
-compiling system_stm32f4xx.c...
-RTE/File_System/FS_Debug.c(50): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include\fs_debug.h(11): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(44): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(69): warning: identifier '_fsType' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef enum _fsType {
-             ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(79): warning: identifier '_fsDevCtrlCode' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef enum _fsDevCtrlCode {
-             ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(90): warning: identifier '_fsMediaInfo' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsMediaInfo {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(97): warning: identifier '_fsIOC_Cache' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsIOC_Cache {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(103): warning: identifier '_fsCID_Register' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsCID_Register {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(132): warning: identifier '_fsTime' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsTime {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(142): warning: identifier '_fsFileInfo' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsFileInfo {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(151): warning: identifier '_fsDriveInfo' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsDriveInfo {
-               ^
-RTE/File_System/FS_Debug.c(50): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include\fs_debug.h(11): warning: In file included from...
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(120): warning: identifier '_NAND_PAGE_LAYOUT' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _NAND_PAGE_LAYOUT {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(133): warning: identifier '_NAND_DEVICE' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _NAND_DEVICE {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(150): warning: identifier '_NAND_HW_DRIVER' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _NAND_HW_DRIVER {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(162): warning: identifier '_NFTL_DRIVER_HANDLE' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _NFTL_DRIVER_HANDLE {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(177): warning: identifier '_NAND_FEATURE_PARAMETER' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _NAND_FEATURE_PARAMETER {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(185): warning: identifier '_NAND_MEDIA_DRIVER' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
-typedef struct _NAND_MEDIA_DRIVER {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(365): warning: identifier '_fsFAT_Volume' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsFAT_Volume {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(385): warning: identifier '_fsFAT_Handle' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsFAT_Handle {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(417): warning: identifier '_fsEFS_Volume' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsEFS_Volume {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(432): warning: identifier '_fsEFS_Handle' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
-typedef struct _fsEFS_Handle {
-               ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(568): warning: identifier '__sys_open' is reserved because it starts with '__' [-Wreserved-identifier]
-extern int      __sys_open    (const char *fname, int openmode);
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(569): warning: identifier '__sys_close' is reserved because it starts with '__' [-Wreserved-identifier]
-extern int      __sys_close   (int handle);
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(570): warning: identifier '__sys_read' is reserved because it starts with '__' [-Wreserved-identifier]
-extern int      __sys_read    (int handle, uint8_t *buf, uint32_t len);
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(571): warning: identifier '__sys_write' is reserved because it starts with '__' [-Wreserved-identifier]
-extern int      __sys_write   (int handle, const uint8_t *buf, uint32_t len);
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(572): warning: identifier '__sys_ensure' is reserved because it starts with '__' [-Wreserved-identifier]
-extern int      __sys_ensure  (int handle);
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(573): warning: identifier '__sys_seek' is reserved because it starts with '__' [-Wreserved-identifier]
-extern int      __sys_seek    (int handle, uint32_t pos);
-                ^
-C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(574): warning: identifier '__sys_flen' is reserved because it starts with '__' [-Wreserved-identifier]
-extern long     __sys_flen    (int handle);
-                ^
-25 warnings generated.
-compiling FS_Debug.c...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(64): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(439): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(62): warning: padding struct 'FLASH_ProcessTypeDef' with 3 bytes to align 'NbSectorsToErase' [-Wpadded]
+  __IO uint32_t               NbSectorsToErase;   /*Internal variable to save the remaining sectors to erase in IT context*/
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(66): warning: padding struct 'FLASH_ProcessTypeDef' with 3 bytes to align 'Sector' [-Wpadded]
+  __IO uint32_t               Sector;             /*Internal variable to define the current sector which is erasing*/
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(74): warning: padding struct 'FLASH_ProcessTypeDef' with 3 bytes to align 'ErrorCode' [-Wpadded]
+  __IO uint32_t               ErrorCode;          /* FLASH error code                    */
+                              ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(273): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    FLASH_Erase_Sector(pEraseInit->Sector, pEraseInit->VoltageRange);
+    ~~~~~~~~~~~~~~~~~~                     ~~~~~~~~~~~~^~~~~~~~~~~~
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(315): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    status = FLASH_OB_RDP_LevelConfig(pOBInit->RDPLevel);
+             ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~^~~~~~~~
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(329): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    status = FLASH_OB_BOR_LevelConfig(pOBInit->BORLevel);
+             ~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~^~~~~~~~
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c(64): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
+./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(439): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_flash.h(297): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h(69): warning: padding size of 'FLASH_OBProgramInitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h(101): warning: padding size of 'FLASH_AdvOBProgramInitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+10 warnings generated.
+compiling stm32f4xx_hal_flash_ex.c...
 RTE/File_System/FS_Config.c(78): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include\fs_config.h(12): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(27): warning: In file included from...
@@ -935,6 +2231,88 @@ extern fsStatus _fdelete (const char *path, const char *options);
                 ^
 32 warnings generated.
 compiling FS_Config.c...
+RTE/File_System/FS_Debug.c(50): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include\fs_debug.h(11): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(44): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(69): warning: identifier '_fsType' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _fsType {
+             ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(79): warning: identifier '_fsDevCtrlCode' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef enum _fsDevCtrlCode {
+             ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(90): warning: identifier '_fsMediaInfo' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsMediaInfo {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(97): warning: identifier '_fsIOC_Cache' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsIOC_Cache {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(103): warning: identifier '_fsCID_Register' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsCID_Register {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(132): warning: identifier '_fsTime' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsTime {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(142): warning: identifier '_fsFileInfo' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsFileInfo {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs.h(151): warning: identifier '_fsDriveInfo' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsDriveInfo {
+               ^
+RTE/File_System/FS_Debug.c(50): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include\fs_debug.h(11): warning: In file included from...
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(120): warning: identifier '_NAND_PAGE_LAYOUT' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _NAND_PAGE_LAYOUT {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(133): warning: identifier '_NAND_DEVICE' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _NAND_DEVICE {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(150): warning: identifier '_NAND_HW_DRIVER' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _NAND_HW_DRIVER {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(162): warning: identifier '_NFTL_DRIVER_HANDLE' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _NFTL_DRIVER_HANDLE {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(177): warning: identifier '_NAND_FEATURE_PARAMETER' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _NAND_FEATURE_PARAMETER {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(185): warning: identifier '_NAND_MEDIA_DRIVER' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+typedef struct _NAND_MEDIA_DRIVER {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(365): warning: identifier '_fsFAT_Volume' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsFAT_Volume {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(385): warning: identifier '_fsFAT_Handle' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsFAT_Handle {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(417): warning: identifier '_fsEFS_Volume' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsEFS_Volume {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(432): warning: identifier '_fsEFS_Handle' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+typedef struct _fsEFS_Handle {
+               ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(568): warning: identifier '__sys_open' is reserved because it starts with '__' [-Wreserved-identifier]
+extern int      __sys_open    (const char *fname, int openmode);
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(569): warning: identifier '__sys_close' is reserved because it starts with '__' [-Wreserved-identifier]
+extern int      __sys_close   (int handle);
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(570): warning: identifier '__sys_read' is reserved because it starts with '__' [-Wreserved-identifier]
+extern int      __sys_read    (int handle, uint8_t *buf, uint32_t len);
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(571): warning: identifier '__sys_write' is reserved because it starts with '__' [-Wreserved-identifier]
+extern int      __sys_write   (int handle, const uint8_t *buf, uint32_t len);
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(572): warning: identifier '__sys_ensure' is reserved because it starts with '__' [-Wreserved-identifier]
+extern int      __sys_ensure  (int handle);
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(573): warning: identifier '__sys_seek' is reserved because it starts with '__' [-Wreserved-identifier]
+extern int      __sys_seek    (int handle, uint32_t pos);
+                ^
+C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/MDK-Middleware/7.13.0/FileSystem/Include/rl_fs_lib.h(574): warning: identifier '__sys_flen' is reserved because it starts with '__' [-Wreserved-identifier]
+extern long     __sys_flen    (int handle);
+                ^
+25 warnings generated.
+compiling FS_Debug.c...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c(186): warning: In file included from...
 C:/Users/Yami.Miller/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal.h(30): warning: In file included from...
 ./RTE/Device/STM32F429VITx\stm32f4xx_hal_conf.h(395): warning: In file included from...
@@ -1408,8 +2786,8 @@ C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/ta
 47 warnings generated.
 compiling tasks.c...
 linking...
-Program Size: Code=11586 RO-data=510 RW-data=16 ZI-data=12976  
-".\Objects\Temp_project.axf" - 0 Error(s), 300 Warning(s).
+Program Size: Code=35152 RO-data=2076 RW-data=64 ZI-data=15368  
+".\Objects\Temp_project.axf" - 0 Error(s), 650 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -1466,6 +2844,7 @@ Package Vendor: Keil
    * Component: Common Version: 1.7.13
    * Component: Cortex Version: 1.7.13
    * Component: DMA Version: 1.7.13
+   * Component: Flash Version: 1.7.13
    * Component: GPIO Version: 1.7.13
    * Component: NAND Version: 1.7.13
    * Component: PWR Version: 1.7.13
@@ -1508,19 +2887,19 @@ Package Vendor: Keil
       Include file:  CMSIS\RTOS2\FreeRTOS\Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.4.6
+      Include file:  Source\include\semphr.h
+      Include file:  Source\include\queue.h
       Source file:   Source\list.c
       Source file:   Source\queue.c
-      Include file:  Source\include\task.h
-      Include file:  Source\include\queue.h
       Source file:   Source\tasks.c
+      Include file:  Source\include\task.h
       Include file:  Source\include\FreeRTOS.h
-      Include file:  Source\include\semphr.h
       Source file:   Source\portable\GCC\ARM_CM4F\port.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Event Groups:10.4.6
-      Include file:  Source\include\event_groups.h
       Source file:   Source\event_groups.c
+      Include file:  Source\include\event_groups.h
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.4.6
       Source file:   Source\portable\MemMang\heap_4.c
@@ -1532,15 +2911,15 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: ARM::CMSIS:RTOS2:FreeRTOS:Cortex-M:10.4.6
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
       Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_mpool.h
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\cmsis_os2.c
-      Source file:   CMSIS\RTOS2\FreeRTOS\Source\ARM\clib_arm.c
-      Source file:   CMSIS\RTOS2\FreeRTOS\Source\os_systick.c
 
    * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
-      Include file:  Include\EventRecorder.h
-      Include file:  Config\EventRecorderConf.h
       Source file:   Source\EventRecorder.c
+      Include file:  Config\EventRecorderConf.h
+      Include file:  Include\EventRecorder.h
 
    * Component: Keil.ARM Compiler::Compiler:I/O:File:File System:1.2.0
       Source file:   Source\retarget_io.c
@@ -1559,20 +2938,24 @@ Package Vendor: Keil
       Source file:   NAND\NAND_MemBus.c
 
    * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
-      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
       Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
+      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
       Include file:  MX_Device.h
 
    * Component: Keil::Device:STM32Cube HAL:Common:1.7.13
-      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
 
    * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
    * Component: Keil::Device:STM32Cube HAL:DMA:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Flash:1.7.13
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
    * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
@@ -1586,8 +2969,8 @@ Package Vendor: Keil
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
    * Component: Keil::Device:STM32Cube HAL:RCC:1.7.13
-      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
    * Component: Keil::Device:STM32Cube HAL:TIM:1.7.13
       Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
@@ -1598,11 +2981,11 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup:2.6.3
       Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
-      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:06
+Build Time Elapsed:  00:00:09
 </pre>
 </body>
 </html>
