@@ -62,6 +62,7 @@
 #define IN
 #define INOUT
 #define OUT
+#define DEBUG 1
 
 #if DEBUG
 #define ERR_PRINT(...)  printf("ERROR ! ! ! file: %s, func: %s , line: %d\n", __FILE__, __func__, __LINE__)
@@ -91,7 +92,6 @@
 #define OFF_PULSE_TIME        30   // Seconds
 #define PULSE_PACKETS_SIZE    42
 #endif
-
 #if DEBUG
 #define PRINTF(...) printf(__VA_ARGS__)
 #else

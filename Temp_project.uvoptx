@@ -152,25 +152,41 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>349</LineNumber>
+          <LineNumber>2394</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
+          <Address>2</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\RTE\Device\STM32F429VITx\STCubeGenerated\Src\main.c</Filename>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\Yami.Miller\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\tasks.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\Temp_project\tasks.c\2394</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
+          <LineNumber>1273</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>14</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>C:\Users\Yami.Miller\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\tasks.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\Temp_project\tasks.c\1273</Expression>
+        </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
           <LineNumber>417</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134239156</Address>
+          <Address>134239620</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -182,7 +198,7 @@
           <Expression>\\Temp_project\Src/Communication.c\417</Expression>
         </Bp>
         <Bp>
-          <Number>2</Number>
+          <Number>3</Number>
           <Type>0</Type>
           <LineNumber>226</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -198,11 +214,11 @@
           <Expression>\\Temp_project\Src/Communication.c\226</Expression>
         </Bp>
         <Bp>
-          <Number>3</Number>
+          <Number>4</Number>
           <Type>0</Type>
-          <LineNumber>133</LineNumber>
+          <LineNumber>366</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134239686</Address>
+          <Address>134234226</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -211,23 +227,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>.\RTE\Device\STM32F429VITx\STCubeGenerated\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\Temp_project\RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c\133</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
-          <Type>0</Type>
-          <LineNumber>1079</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>20</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>C:\Users\Yami.Miller\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.4.6\Source\tasks.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\Temp_project\C:/Users/Yami.Miller/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.4.6/Source/tasks.c\1079</Expression>
+          <Expression>\\Temp_project\RTE/Device/STM32F429VITx/STCubeGenerated/Src/main.c\366</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

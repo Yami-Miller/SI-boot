@@ -8,3 +8,7 @@ Temp_project.uvguix.Yami.Miller
 Objects/Temp_project.htm
 
 *.htm
+
+*.o
+
+Objects/
