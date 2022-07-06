@@ -31,7 +31,9 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <FreeRTOS.h>
+// <semphr.h>
+#include <cmsis_os2.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

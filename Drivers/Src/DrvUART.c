@@ -206,6 +206,8 @@ void UART_StartCommunication( void )
    uart_BufferInit();
 
 }
+char tempArr[100];
+int tempIndex = 0;
 /*******************************************************************************
 ** @Function   : HAL_UART_RxCpltCallback
 ** @Description:
@@ -222,6 +224,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         {
             ERR_PRINT("UART AddByteToRxBuffer failed. *uart_TempBuffer=0x%02X\n", *uart_TempBuffer);
         }
+        tempArr[tempIndex++] =  *uart_TempBuffer;
 
         *uart_TempBuffer = 0;
         COM_ParseData();

@@ -448,6 +448,11 @@
               <FileType>1</FileType>
               <FilePath>.\SharedModules\Src\FWUImagesInfoHandler.c</FilePath>
             </File>
+            <File>
+              <FileName>MainManager.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\MainManager.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

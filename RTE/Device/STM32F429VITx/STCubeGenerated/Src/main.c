@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "Communication.h"
+#include "MainManager.h"
 #include "DrvUART.h"
 #include "boot_loader.h"
 #include "Counters.h"
@@ -31,7 +32,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef StaticTask_t osStaticThreadDef_t;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -77,10 +78,24 @@ BootParams_t g_siBootInfo = {
     APP_IMAGE_SIZE_IN_SECTORS
 };
 
+/* Definitions for MainManagerTask */
+osThreadId_t MainManagerTaskHandle;
+uint32_t MainManagerTaskBuffer[ 256*8 ];
+osStaticThreadDef_t MainManagerTaskControlBlock;
+const osThreadAttr_t MainManagerTask_attributes = {
+  .name = "MainManagerTask",
+  .cb_mem = &MainManagerTaskControlBlock,
+  .cb_size = sizeof(MainManagerTaskControlBlock),
+  .stack_mem = &MainManagerTaskBuffer[0],
+  .stack_size = sizeof(MainManagerTaskBuffer),
+  .priority = (osPriority_t) osPriorityNormal,
+};
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void InitRtosResources(void);
 static void MX_GPIO_Init(void);
 static void MX_FMC_Init(void);
 static void MX_USART3_UART_Init(void);
@@ -121,26 +136,38 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_FMC_Init();
+  //MX_FMC_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 	SI_LED_ON();
-    
-  PRINTF("SI-boot ON temp\n");
-  UART_StartCommunication();
-
+	PRINTF("SI-boot ON temp\n");
   /* USER CODE END 2 */
+	
+	/* Init scheduler */
+  osKernelInitialize();
 
+	InitRtosResources();
+	
+	/* Start scheduler */
+  osKernelStart();
+	
+	/* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		COM_CommunicationManagement();
+//		HAL_Delay(500);
+//		printf("good\r\n");
+//		printf("good1\r\n");
+//		printf("good2\r\n");
+//		printf("good3\r\n");
+//		printf("good4\r\n");
+//		printf("good5\r\n");
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
-  /* USER CODE END 3 */
+	
 }
 
 /**
@@ -295,6 +322,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void InitRtosResources(void)
+{
+	//-------------------------------------------------------------------//
+	// 															Threads
+	//-------------------------------------------------------------------//			
+		MainManagerTaskHandle = osThreadNew(MainManagerTask, NULL, &MainManagerTask_attributes);
+}
+
 // function for debug printf
 int fputc(int ch, FILE *f) 
 {
